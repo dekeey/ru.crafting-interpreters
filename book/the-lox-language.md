@@ -1,27 +1,25 @@
 ^title Язык Lox
 ^part Добро пожаловать
 
-> What nicer thing can you do for somebody than make them breakfast?
+> Что может быть приятнее сделать для кого-нибудь, чем приготовить им завтрак?
 >
-> <cite>Anthony Bourdain</cite>
+> <cite>Энтони Бурден</cite>
 
-We're going to spend the rest of this book illuminating every dark and sundry
-corner of the Lox language, but it seems cruel to have you immediately start
-grinding out code for the interpreter without at least a glimpse of what we're
-going to end up with.
+Все дальнейшее содержание книги мы потратим на освещение каждого темного уголка языка Lox, 
+но было бы жестоко предложить вам немедленно начать копаться в коде интерпретатора без хотябы
+проблеска понимания того что мы собираемся получить в итоге.
 
-At the same time, I don't want to drag you through reams of language lawyering
-and specification-ese before you get to touch your text <span
-name="home">editor</span>. So this will be a gentle, friendly introduction to
-Lox. It will leave out of a lot of details and edge cases. We've got plenty of
-time for those later.
+В то же время, я не хочу протаскивать вас через кипу документации и спецификаций, прежде чем вы 
+откроете текстовый <span name="home">редактор</span>. Это будет вежливое, дружеское введение
+в язык Lox. Мы опустим множество деталей и сложных моментов. У нас будет достаточно времени для
+этого позже.
 
 <aside name="home">
 
-A tutorial isn't very fun if you can't try the code out yourself. Alas, you
-don't have a Lox interpreter yet, since you haven't built one!
+Обучение не такое веселое, если вы не можете попробовать кодить самостоятельно. Увы, у вас пока
+нет интерпретатора Lox, вы его еще не написали!
 
-Fear not. You can use [mine][repo].
+Не бойтесь. Вы можете использовать [мой][repo].
 
 [repo]: https://github.com/munificent/craftinginterpreters
 
