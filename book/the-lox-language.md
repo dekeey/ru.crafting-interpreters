@@ -1,5 +1,5 @@
-^title The Lox Language
-^part Welcome
+^title Язык Lox
+^part Добро пожаловать
 
 > What nicer thing can you do for somebody than make them breakfast?
 >
