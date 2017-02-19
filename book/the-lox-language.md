@@ -25,50 +25,53 @@
 
 </aside>
 
-## Hello, Lox
+## Привет, Lox
 
-Here's your very first taste of <span name="salmon">Lox</span>:
+Давайте впервые попробуем <span name="salmon">Lox</span> на вкус:
 
 <aside name="salmon">
 
-Your first taste of Lox, the language, that is. I don't know if you've ever had
-the cured, cold-smoked salmon before. If not, give it a try too.
+Ваш первый кусочек языка Lox, вот он. Я не знаю, пробовали ли вы когда-нибудь
+лосося холодного копчения, если нет, то обязательно попробуйте его так же.
 
 </aside>
 
 ```lox
-// Your first Lox program!
+// Ваша первая программа на Lox!
 print "Hello, world!";
 ```
 
-As that `//` line comment and the trailing semicolon imply, Lox's syntax is a
-member of the C family. (There are no parentheses around the string because
-`print` is a built-in statement, and not a library function.)
+Использование `//` в качестве комментирования строки и окончание ее в виде 
+точки с запятой подразумевает, что синтакс языка Lox относится 
+к семейству Си. (Скобки вокруг строки "Hello, world!" отсутствуют 
+по причине того, что 'print' является встроенным оператором, а не функцией
+подключенной библиотеки.)
 
-Now, I won't claim that <span name="c">C</span> has a *great* syntax. If we
-wanted something elegant, we'd probably mimic Pascal or Smalltalk. If we wanted
-to go full Scandinavian-furniture-minimalism, we'd do a Scheme. Those all have
-their virtues.
+Я не утверждаю, что у <span name="c">C</span> *великолепный* синтаксис. Если бы
+мы хотели чего-нибудь элегантного, мы бы вероятно подражали таким языкам 
+как Pascal или Smalltalk. Если бы мы хотели полноценного скандинавского минимализма,
+выбрали бы в качестве примера язык Scheme. Все они имеют свои достоинства.
 
 <aside name="c">
 
-I'm surely biased, but I think Lox's syntax is pretty clean. C's most egregious
-grammar problems are around types. Ritchie had this idea called "[declaration
-reflects use][use]" where variable declarations mirror the operations you would
-have to perform on the variable to get to a value of the base type. Clever idea,
-but I don't think it worked out great in practice.
+Я определенно пристрастен, но думаю что синтаксис Lox довольно прозрачен. Самые вопиющие
+проблемы с грамматикой в C лежат в работе с типами. У Ритчи была идея, называемая
+"[объявление отражает использование][use]", где объявления переменных отражают
+операции, которые вам необходимо произвести над переменной чтобы добраться до значения
+базового типа. Умная идея, но я не думаю, что она будет хорошо работать на практике.
 
 [use]: http://softwareengineering.stackexchange.com/questions/117024/why-was-the-c-syntax-for-arrays-pointers-and-functions-designed-this-way
 
-Lox doesn't have static types, so we avoid that.
+В Lox нет статических типов, таким образом мы избегаем этого.
 
 </aside>
 
-What C-like syntax has instead is something you'll find is often more valuable
-in a language: *familiarity*. I know you are already comfortable with that style
-because the two languages we'll be using to *implement* Lox -- Java and C --
-also inherit it. Using a similar syntax for Lox gives you one less thing to
-learn.
+То, что C подобный синтаксис предоставляет взамен, является зачастую
+самой значимой частью в языке: *знакомость*. Я знаю, что вам уже комфортен 
+такой стиль, потому как два языка, которые мы будем использовать чтобы 
+*воплотить* Lox -- это Java и C --
+так же использующие его. Используя похожий синтаксис для Lox позволит вам
+учить на одну вещь меньше.
 
 ## A High-Level Language
 
