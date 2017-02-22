@@ -73,39 +73,42 @@ print "Hello, world!";
 так же использующие его. Используя похожий синтаксис для Lox позволит вам
 учить на одну вещь меньше.
 
-## A High-Level Language
+## Высокоуровневый язык
 
-While this book ended up bigger than I was hoping, it's still not big enough to
-fit a huge language like Java in it. In order to fit two complete
-implementations of Lox in these pages, Lox itself has to be pretty compact.
+В то время как эта книга становится объемнее чем я надеялся, она все равно
+не достаточно большая, чтобы вместить в себя огромный язык вроде Java. Чтобы
+уместить в себе две полноценные имплементации Lox на этих страницах, 
+Lox должен быть довольно компактен.
 
-When I think of languages that are small but useful, what comes to mind are
-high-level "scripting" languages like <span name="js">JavaScript</span>, Scheme,
-and Lua. Of those three, Lox looks most like JavaScript, mainly because most
-C-syntax languages do. As we'll learn later, Lox's approach to scoping hews
-closely to Scheme. The C flavor of Lox we'll build in [Part III][] is heavily
-indebted to Lua's clean, efficient implementation.
+Когда я думаю о языках, которые одновременно небольшие и в то же время полезные, 
+то мне приходят на ум высокоуровневые "скриптовые" языки вроде 
+<span name="js">JavaScript</span>, Scheme и Lua. Из них, Lox больше всего похож на
+JavaScript, в основном из-за C-образного синтаксиса. Как мы увидим позже, 
+подход Lox в ограничении области видимости близок к языку Scheme. Привкус Cи в Lox,
+который мы добавим в [Третьей части][] обязан своим появлением языку Lua,
+благодаря его простой и эффективной реализации.
 
 [part iii]: a-bytecode-interpreter-in-c.html
 
 <aside name="js">
 
-Now that JavaScript has taken over the world and is used to build ginormous
-applications, it's hard to think of it as a "little scripting language". But
-Brendan Eich hacked it into Netscape in *ten days* to make buttons animate on
-web pages. JavaScript has grown up since then, but it was once a cute little
-language.
+Сегодня, когда JavaScript захватил мир и используется для создания невероятного
+количества приложений, трудно думать о нем как о "маленьком скриптовом языке". 
+Но Брендан Эйх вшил его в Netscape за *десять дней*, для того, чтобы была
+возможность анимировать кнопки на страницах. JavaScript вырос с тех пор, но когда-то 
+он был просто маленьким милым языком.
 
-Because Eich slapped JS together with roughly the same raw materials and time as
-an episode of MacGuyver, it has some weird semantic corners where the duct tape
-and paper clips show through. Things like variable hoisting, dynamically-bound
-`this`, holes in arrays, and implicit conversions.
+Поскольку Эйх слепил JS примерно за такое же время, как делается эпизод телешоу Макгайвер,
+в нем есть странные симантические конструкции, где можно легко заметить клочки бумаги и 
+обрывки скотча торчащие в разные стороны. Вещи вроде всплытия переменных, 
+динамическая привязка `this`, дыры в массивах и неявное приведение типов.
 
-I had the luxury of taking my time on Lox, so it should be a little cleaner.
+У меня была роскошь, потратить достаточно времени на Lox, таким образом, он должен быть
+более понятным.
 
 </aside>
 
-Lox shares two other aspects with those three languages:
+Lox разделяет два других аспекта этих трех языков:
 
 ### Dynamic typing
 
